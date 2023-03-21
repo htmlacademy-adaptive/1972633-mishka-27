@@ -1,0 +1,37 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 30px 0 28px;
+  margin: 0 0 0 -4px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid $darkwhisper;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    padding: 0;
+  }
+}
+
+.social__item {
+  margin: 0 33px 0 0;
+}
+
+.social__item:last-child {
+  margin: 0;
+}
+
+.social__link {
+  color: $aubergine;
+
+  &:hover {
+    color: $lightpuertorico;
+  }
+
+  &:active,
+  &:focus-visible {
+    color: rgba($lightpuertorico, 0.3);
+    outline: none;
+  }
+}

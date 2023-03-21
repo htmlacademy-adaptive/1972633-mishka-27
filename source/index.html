@@ -10,72 +10,73 @@
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/OpenSans/OpenSans-Bold.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/OpenSans/OpenSans-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="js/script.js" as="script">
 </head>
 
 <body class="page__body">
   <header class="header">
-    <div class="container">
-      <nav class="header__nav main-nav main-nav--closed main-nav--nojs">
-        <div class="main-nav__wrapper">
-          <a class="main-nav__logo" href="index.html">
-            <picture>
-              <source media="(min-width:1150px)" srcset="img/header/mishka-logo-desktop.svg">
-              <source media="(min-width:768px)" srcset="img/header/mishka-logo-tablet.svg">
-              <img class="main-nav__logo-image" src="img/header/mishka-logo-mobile.svg" width="86" height="35"
-                alt="Логотип Mishka.">
-            </picture>
-          </a>
-          <button class="main-nav__toggle" type="button">
-            <span class="main-nav__toggle-line"></span>
-            <span class="main-nav__toggle-line"></span>
-            <span class="main-nav__toggle-line"></span>
-            <span class="visually-hidden">Кнопка открытия меню</span>
-          </button>
-        </div>
-        <div class="main-nav__container">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--border" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
-          <ul class="main-nav__user">
-            <li class="main-nav__user-item">
-              <a class="main-nav__link main-nav__user-link main-nav__user-link--search" href="#">
-                <svg class="main-nav__user-icon main-nav__user-icon--search" aria-hidden="true" focusable="false"
-                  width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite.svg#search"></use>
-                </svg>
-                <span class="main-nav__user-text main-nav__user-text--search">Поиск по сайту</span>
-              </a>
-            </li>
-            <li class="main-nav__user-item">
-              <a class="main-nav__link main-nav__user-link" href="#">
-                <svg class="main-nav__user-icon" aria-hidden="true" focusable="false" width="21" height="18"
-                  viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite.svg#cart"></use>
-                </svg>
-                <span class="main-nav__user-text">Корзина: пока пуста</span>
-              </a>
-            </li>
-          </ul>
-          <p class="main-nav__text">Бесплатная доставка по России</p>
-          <ul class="main-nav__offers">
-            <li class="main-nav__offers-item">
-              <a class="main-nav__link main-nav__offers-link" href="#">Новые поступления</a>
-            </li>
-            <li class="main-nav__offers-item">
-              <a class="main-nav__link main-nav__offers-link" href="#">Распродажа</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+    <!-- <div class="container"> -->
+    <nav class="header__nav main-nav main-nav--closed main-nav--nojs">
+      <div class="main-nav__wrapper">
+        <a class="main-nav__logo" href="#">
+          <picture>
+            <source media="(min-width:1150px)" srcset="img/header/mishka-logo-desktop.svg">
+            <source media="(min-width:768px)" srcset="img/header/mishka-logo-tablet.svg">
+            <img class="main-nav__logo-image" src="img/header/mishka-logo-mobile.svg" width="86" height="35"
+              alt="Логотип Mishka.">
+          </picture>
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="main-nav__toggle-line"></span>
+          <span class="main-nav__toggle-line"></span>
+          <span class="main-nav__toggle-line"></span>
+          <span class="visually-hidden">Кнопка открытия меню</span>
+        </button>
+      </div>
+      <div class="main-nav__container">
+        <div class="main-nav__background"></div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--border" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__user">
+          <li class="main-nav__user-item">
+            <a class="main-nav__link main-nav__user-link main-nav__user-link--search" href="#">
+              <svg class="main-nav__user-icon main-nav__user-icon--search" aria-hidden="true" focusable="false"
+                width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#search"></use>
+              </svg>
+              <span class="main-nav__user-text main-nav__user-text--search">Поиск по сайту</span>
+            </a>
+          </li>
+          <li class="main-nav__user-item">
+            <a class="main-nav__link main-nav__user-link" href="#">
+              <svg class="main-nav__user-icon" aria-hidden="true" focusable="false" width="21" height="18"
+                viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#cart"></use>
+              </svg>
+              <span class="main-nav__user-text">Корзина: пока пуста</span>
+            </a>
+          </li>
+        </ul>
+        <p class="main-nav__text">Бесплатная доставка по России</p>
+        <ul class="main-nav__offers">
+          <li class="main-nav__offers-item">
+            <a class="main-nav__link main-nav__offers-link" href="#">Новые поступления</a>
+          </li>
+          <li class="main-nav__offers-item">
+            <a class="main-nav__link main-nav__offers-link" href="#">Распродажа</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- </div> -->
   </header>
   <main class="main-container">
     <section class="hero">
@@ -106,7 +107,7 @@
       <div class="products__container container">
         <div class="products__top-wrapper">
           <h2 class="products__title title--second">Вязаные корзинки</h2>
-          <a class="products__week" href="#">Товар недели</a>
+          <span class="products__week" href="#">Товар недели</span>
         </div>
         <div class="products__wrapper">
           <p class="products__text">Экологически чистая пряжа,
@@ -125,27 +126,26 @@
               <dd class="products__specification-value">15 см</dd>
             </div>
           </dl>
-          <div class="products__image-wrapper">
-            <picture>
-              <source type="image/webp" media="(min-width:1150px)"
-                srcset="img/products/baskets-desktop.webp, img/products/baskets-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width:768px)"
-                srcset="img/products/baskets-tablet.webp, img/products/baskets-tablet@2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/products/baskets-mobile.webp, img/products/baskets-mobile@2x.webp 2x">
-              <source media="(min-width:1150px)"
-                srcset="img/products/baskets-desktop.jpg 1x, img/products/baskets-desktop@2x.jpg 2x">
-              <source media="(min-width:768px)"
-                srcset="img/products/baskets-tablet.jpg 1x, img/products/baskets-tablet@2x.jpg 2x">
-              <img class="products__image" src="img/products/baskets-mobile.jpg"
-                srcset="img/products/baskets-mobile@2x.jpg 2x" width="260" height="315"
-                alt="Изображение вязаных картинок.">
-            </picture>
-          </div>
           <div class="products__cost-container">
             <span class="products__cost">Цена: 990 руб.</span>
             <a class="products__link button" href="#">Заказать</a>
           </div>
+        </div>
+        <div class="products__image-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width:1150px)"
+              srcset="img/products/baskets-desktop.webp, img/products/baskets-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width:768px)"
+              srcset="img/products/baskets-tablet.webp, img/products/baskets-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/products/baskets-mobile.webp, img/products/baskets-mobile@2x.webp 2x">
+            <source media="(min-width:1150px)"
+              srcset="img/products/baskets-desktop.jpg 1x, img/products/baskets-desktop@2x.jpg 2x">
+            <source media="(min-width:768px)"
+              srcset="img/products/baskets-tablet.jpg 1x, img/products/baskets-tablet@2x.jpg 2x">
+            <img class="products__image" src="img/products/baskets-mobile.jpg"
+              srcset="img/products/baskets-mobile@2x.jpg 2x" width="260" height="315"
+              alt="Изображение вязаных картинок.">
+          </picture>
         </div>
       </div>
     </section>
@@ -153,28 +153,28 @@
       <div class="container">
         <h2 class="about-us__title title--second">Коротко о нас:</h2>
         <ul class="about-us__list">
-          <li class="about-us__item">
+          <li class="about-us__item about-us__item--flowers">
             <svg class="about-us__icon about-us__icon--flowers" aria-hidden="true" focusable="false" width="33"
               height="38" viewBox="0 0 33 38" fill="none" xmlns="http://www.w3.org/2000/svg">
               <use href="img/sprite.svg#flower" />
             </svg>
             <p class="about-us__text">Экологически чистые&nbsp;материалы</p>
           </li>
-          <li class="about-us__item">
+          <li class="about-us__item about-us__item--money">
             <svg class="about-us__icon about-us__icon--money" aria-hidden="true" focusable="false" width="47"
               height="27" viewBox="0 0 47 27" fill="none" xmlns="http://www.w3.org/2000/svg">
               <use href="img/sprite.svg#money" />
             </svg>
             <p class="about-us__text">Скандинавский стиль по&nbsp;российской цене</p>
           </li>
-          <li class="about-us__item">
+          <li class="about-us__item about-us__item--heart">
             <svg class="about-us__icon about-us__icon--heart" aria-hidden="true" focusable="false" width="34"
               height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
               <use href="img/sprite.svg#heart" />
             </svg>
             <p class="about-us__text">Увеличивает лайки на&nbsp;фотографиях</p>
           </li>
-          <li class="about-us__item about-us__item--second">
+          <li class="about-us__item about-us__item--clew about-us__item--second">
             <svg class="about-us__icon about-us__icon--clew" aria-hidden="true" focusable="false" width="35" height="34"
               viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <use href="img/sprite.svg#clew" />
@@ -182,14 +182,14 @@
             <p class="about-us__text">Связано вручную
               с&nbsp;любовью&nbsp;и&nbsp;умилением</p>
           </li>
-          <li class="about-us__item about-us__item--second">
+          <li class="about-us__item about-us__item--rocket about-us__item--second">
             <svg class="about-us__icon about-us__icon--rocket" aria-hidden="true" focusable="false" width="55"
               height="23" viewBox="0 0 55 23" fill="none" xmlns="http://www.w3.org/2000/svg">
               <use href="img/sprite.svg#rocket" />
             </svg>
             <p class="about-us__text">Поддержка отечественного производителя</p>
           </li>
-          <li class="about-us__item about-us__item--second">
+          <li class="about-us__item about-us__item--gift about-us__item--second">
             <svg class="about-us__icon about-us__icon--gift" aria-hidden="true" focusable="false" width="33" height="32"
               viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <use href="img/sprite.svg#gift" />
@@ -252,13 +252,17 @@
           <ul class="contacts__list">
             <li class="contacts__item">
               <p class="contacts__e-mail-container">
-                e-mail:
-                <a class="contacts__e-mail-link" href="#">info@mimimishkashop.ru</a>
+                <span class="contacts__e-mail-text">
+                  e-mail:
+                </span>
+                <a class="contacts__e-mail-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
               </p>
             </li>
             <li class="contacts__item">
               <address class="contacts__address-container">
-                адрес:
+                <span class="contacts__address-text">
+                  адрес:
+                </span>
                 <span class="contacts__address">г. Санкт-Петербург ул.&nbsp;Большая Конюшенная д.&nbsp;19/8, офис
                   101</span>
               </address>
@@ -297,6 +301,7 @@
           <svg width="102" height="34" viewBox="0 0 102 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <use href="img/sprite.svg#logo-footer" />
           </svg>
+          <span class="visually-hidden">Логотип сайта</span>
         </a>
         <ul class="footer__list social">
           <li class="social__item">
@@ -337,36 +342,32 @@
       </div>
     </div>
   </footer>
-  К классу modal обавить класс modal--open для открытия модального окна
+  <!-- К классу modal обавить класс modal--open для открытия модального окна -->
   <div class="modal">
     <div class="modal__wrapper">
       <div class="container">
         <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
-        <p class="modal__text">Выберите размер:</p>
-        <ul class="modal__list">
-          <li class="modal__item">
-            <label class="modal__label">
-              <input class="visually-hidden modal__input-checkbox" name="S" type="checkbox" checked>
-              <span class="modal__mark"></span>
-              <span class="modal__label">S</span>
-            </label>
-          </li>
-          <li class="modal__item">
-            <label class="modal__label">
-              <input class="visually-hidden modal__input-checkbox" name="S" type="checkbox" checked>
-              <span class="modal__mark"></span>
-              <span class="modal__label">M</span>
-            </label>
-          </li>
-          <li class="modal__item">
-            <label class="modal__label">
-              <input class="visually-hidden modal__input-checkbox" name="S" type="checkbox" checked>
-              <span class="modal__mark"></span>
-              <span class="modal__label">L</span>
-            </label>
-          </li>
-        </ul>
-        <button class="modal__button button button--accent">Добавить</button>
+        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="modal__fieldset">
+            <legend class="modal__text">Выберите размер:</legend>
+            <ul class="modal__list">
+              <li class="modal__item">
+                <input class="visually-hidden modal__input-checkbox" id="S" name="S" type="checkbox" checked>
+                <label class="modal__label" for="S">S</label>
+              </li>
+              <li class="modal__item">
+                <input class="visually-hidden modal__input-checkbox" id="M" name="M" type="checkbox">
+                <label class="modal__label" for="M">M</label>
+              </li>
+              <li class="modal__item">
+                <input class="visually-hidden modal__input-checkbox" id="L" name="L" type="checkbox">
+                <label class="modal__label" for="L">L</label>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="modal__button button button--accent">Добавить</button>
+        </form>
       </div>
     </div>
   </div>

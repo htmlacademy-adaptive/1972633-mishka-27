@@ -10,14 +10,14 @@
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/OpenSans/OpenSans-Bold.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/OpenSans/OpenSans-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="js/script.js" as="script">
 </head>
 
 <body class="page__body">
   <header class="header">
-    <div class="container">
+    <!-- <div class="container"> -->
       <nav class="header__nav main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo" href="index.html">
@@ -36,6 +36,7 @@
           </button>
         </div>
         <div class="main-nav__container">
+          <div class="main-nav__background main-nav__background--accent"></div>
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--border" href="catalog.html">Каталог товаров</a>
@@ -75,12 +76,13 @@
           </ul>
         </div>
       </nav>
-    </div>
+    <!-- </div> -->
   </header>
   <main class="main-container">
     <section class="catalog">
-      <h1 class="catalog__title title title--background">Каталог товаров</h1>
-      <h2 class="visually-hidden">Каталог товаров</h2>
+      <div class="catalog__title-container">
+        <h1 class="catalog__title title">Каталог товаров</h1>
+      </div>
       <div class="container">
         <ul class="catalog__list">
           <li class="catalog__item">
@@ -247,10 +249,14 @@
               <span class="visually-hidden">Кнопка видео</span>
             </button>
           </div>
-          <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о&nbsp;том,
-            как
-            появляются наши товары.</p>
-          <a class="production__link button--second">Сделать заказ</a>
+          <div class="production__wrapper">
+            <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео
+              о&nbsp;том,
+              как
+              появляются наши товары.</p>
+            <a class="production__link button--second">Сделать заказ</a>
+          </div>
+          <div class="production__box-shadow"></div>
         </div>
       </div>
     </section>
@@ -262,6 +268,7 @@
           <svg width="102" height="34" viewBox="0 0 102 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <use href="img/sprite.svg#logo-footer" />
           </svg>
+          <span class="visually-hidden">Логотип сайта</span>
         </a>
         <ul class="footer__list social">
           <li class="social__item">
@@ -302,6 +309,35 @@
       </div>
     </div>
   </footer>
+  <!-- К классу modal обавить класс modal--open для открытия модального окна -->
+  <div class="modal">
+    <div class="modal__wrapper">
+      <div class="container">
+        <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="modal__fieldset">
+            <legend class="modal__text">Выберите размер:</legend>
+            <ul class="modal__list">
+              <li class="modal__item">
+                <input class="visually-hidden modal__input-checkbox" id="S" name="S" type="checkbox" checked>
+                <label class="modal__label" for="S">S</label>
+              </li>
+              <li class="modal__item">
+                <input class="visually-hidden modal__input-checkbox" id="M" name="M" type="checkbox">
+                <label class="modal__label" for="M">M</label>
+              </li>
+              <li class="modal__item">
+                <input class="visually-hidden modal__input-checkbox" id="L" name="L" type="checkbox">
+                <label class="modal__label" for="L">L</label>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="modal__button button button--accent">Добавить</button>
+        </form>
+      </div>
+    </div>
+  </div>
   <script src="js/script.js"></script>
 </body>
 

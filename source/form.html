@@ -10,14 +10,14 @@
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/OpenSans/OpenSans-Bold.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/OpenSans/OpenSans-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="js/script.js" as="script">
 </head>
 
 <body class="page__body">
   <header class="header">
-    <div class="container">
+    <!-- <div class="container"> -->
       <nav class="header__nav main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo" href="index.html">
@@ -36,6 +36,7 @@
           </button>
         </div>
         <div class="main-nav__container">
+          <div class="main-nav__background main-nav__background--accent"></div>
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--border" href="catalog.html">Каталог товаров</a>
@@ -75,30 +76,34 @@
           </ul>
         </div>
       </nav>
-    </div>
+    <!-- </div> -->
   </header>
   <main class="main-container">
     <section class="form">
-      <h1 class="form__title title title--background">Вязание на заказ</h1>
+      <div class="form__title-container">
+        <h1 class="form__title title">Вязание на заказ</h1>
+      </div>
       <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
         свяжемся с вами, чтобы уточнить детали.</p>
       <form class="form__fields" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="form__fieldset form__fieldset--radio">
+        <fieldset class="form__fieldset">
           <div class="form__container container">
             <h2 class="form__legend form__legend--radio">Тип</h2>
-            <ul class="form__list">
+            <ul class="form__list form__list--radio">
               <li class="form__item form__item--radio">
                 <label class="form__label">
+                  <!--input добавить атрибут disabled, для неактивного состояния -->
                   <input class="visually-hidden form__input-radio" name="type" value="accessory" type="radio" checked>
                   <span class="form__mark-radio"></span>
-                  <span class="form__label form__label--radio">Аксессуар для интерьера</span>
+                  <span class="form__label-text form__label-text--radio">Аксессуар для интерьера</span>
                 </label>
               </li>
               <li class="form__item form__item--radio">
                 <label class="form__label">
+                  <!--input добавить атрибут disabled, для неактивного состояния -->
                   <input class="visually-hidden form__input-radio" name="type" value="toy" type="radio">
                   <span class="form__mark-radio"></span>
-                  <span class="form__label form__label--radio">Детская игрушка</span>
+                  <span class="form__label-text form__label-text--radio">Детская игрушка</span>
                 </label>
               </li>
             </ul>
@@ -106,67 +111,76 @@
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--checkbox">
           <div class="form__container container">
-            <h2 class="form__legend form__legend--checkbox">Цвет</h2>
+            <h2 class="form__legend">Цвет</h2>
             <ul class="form__list form__list--checkbox">
               <li class="form__item form__item--checkbox">
                 <label class="form__label">
+                  <!--input добавить атрибут disabled, для неактивного состояния -->
                   <input class="visually-hidden form__input-checkbox" name="white" type="checkbox" checked>
                   <span class="form__mark-checkbox"></span>
-                  <span class="form__label form__label--checkbox">Белый</span>
+                  <span class="form__label-text form__label-text--checkbox">Белый</span>
                 </label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--checkbox">
                 <label class="form__label">
+                  <!--input добавить атрибут disabled, для неактивного состояния -->
                   <input class="visually-hidden form__input-checkbox" name="grey" type="checkbox" checked>
                   <span class="form__mark-checkbox"></span>
-                  <span class="form__label form__label--checkbox">Серый</span>
+                  <span class="form__label-text form__label-text--checkbox">Серый</span>
                 </label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--checkbox">
                 <label class="form__label">
+                  <!--input добавить атрибут disabled, для неактивного состояния -->
                   <input class="visually-hidden form__input-checkbox" name="tiffany" type="checkbox">
                   <span class="form__mark-checkbox"></span>
-                  <span class="form__label form__label--checkbox">Тиффани</span>
+                  <span class="form__label-text form__label-text--checkbox">Тиффани</span>
                 </label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--checkbox">
                 <label class="form__label">
+                  <!--input добавить атрибут disabled, для неактивного состояния -->
                   <input class="visually-hidden form__input-checkbox" name="black" type="checkbox">
                   <span class="form__mark-checkbox"></span>
-                  <span class="form__label form__label--checkbox">Черный</span>
+                  <span class="form__label-text form__label-text--checkbox">Черный</span>
                 </label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--checkbox">
                 <label class="form__label">
+                  <!--input добавить атрибут disabled, для неактивного состояния -->
                   <input class="visually-hidden form__input-checkbox" name="pink" type="checkbox">
                   <span class="form__mark-checkbox"></span>
-                  <span class="form__label form__label--checkbox">Розовый</span>
+                  <span class="form__label-text form__label-text--checkbox">Розовый</span>
                 </label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--checkbox">
                 <label class="form__label">
+                  <!--input добавить атрибут disabled, для неактивного состояния -->
                   <input class="visually-hidden form__input-checkbox" name="orange" type="checkbox">
                   <span class="form__mark-checkbox"></span>
-                  <span class="form__label form__label--checkbox">Оранжевый</span>
+                  <span class="form__label-text form__label-text--checkbox">Оранжевый</span>
                 </label>
               </li>
             </ul>
           </div>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--info">
+        <fieldset class="form__fieldset">
           <div class="form__container container">
-            <h2 class="form__legend form__legend--info">ФИО</h2>
+            <h2 class="form__legend">ФИО</h2>
             <ul class="form__list form__list--info">
               <li class="form__item form__item--info">
-                <label class="form__label form__label--input" for="name-field">Имя:</label>
+                <label class="form__label-text form__label-text--input" for="name-field">Имя:</label>
+                <!--input добавить атрибут disabled, для неактивного состояния -->
                 <input class="form__input input" id="name-field" type="text" placeholder="Введите ваше имя*" required>
               </li>
               <li class="form__item form__item--info">
-                <label class="form__label form__label--input" for="surname-field">Фамилия:</label>
+                <label class="form__label-text form__label-text--input" for="surname-field">Фамилия:</label>
+                <!--input добавить атрибут disabled, для неактивного состояния -->
                 <input class="form__input input" id="surname-field" type="text" placeholder="Укажите фамилию*" required>
               </li>
               <li class="form__item form__item--info">
-                <label class="form__label form__label--input" for="surname2-field">Отчество:</label>
+                <label class="form__label-text form__labe-text--input" for="surname2-field">Отчество:</label>
+                <!--input добавить атрибут disabled, для неактивного состояния -->
                 <input class="form__input input" id="surname2-field" type="text" placeholder="Отчество, если желаете"
                   required>
               </li>
@@ -175,10 +189,11 @@
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--contact">
           <div class="form__container form__container--contact container">
-            <ul class="form__list">
+            <ul class="form__list form__list--contact">
               <li class="form__item form__item--contact">
-                <label class="form__label form__label--phone" for="phone-field">Тел</label>
+                <label class="form__label-text form__label-text--phone" for="phone-field">Тел</label>
                 <div class="form__input-wrapper">
+                  <!--input добавить атрибут disabled, для неактивного состояния -->
                   <input class="form__input input input--phone" id="phone-field" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
                     type="tel" required>
                   <svg class="form__icon" aria-hidden="true" focusable="false" width="25" height="24"
@@ -188,11 +203,12 @@
                 </div>
               </li>
               <li class="form__item form__item--contact">
-                <label class="form__label form__label--email" for="email-field">E-mail</label>
+                <label class="form__label-text form__label-text--email" for="email-field">E-mail</label>
                 <div class="form__input-wrapper">
+                  <!--input добавить атрибут disabled, для неактивного состояния -->
                   <input class="form__input input input--email" id="email-field" placeholder="Ваш Email*" type="tel"
                     required>
-                  <svg class=" form__icon form__icon--email" aria-hidden="true" focusable="false" width="32" height="21"
+                  <svg class="form__icon form__icon--email" aria-hidden="true" focusable="false" width="32" height="21"
                     viewBox="0 0 32 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <use href="img/sprite.svg#mail"></use>
                   </svg>
@@ -201,16 +217,17 @@
             </ul>
           </div>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--textarea">
           <div class="form__container container">
-            <label class="form__label form__label--textarea" for="textarea-field">Доп</label>
+            <label class="form__label-text form__label-text--textarea" for="textarea-field">Доп</label>
+            <!--textarea добавить атрибут disabled, для неактивного состояния -->
             <textarea class="form__textarea" name="textarea-field" id="textarea-field"
               placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
         </fieldset>
         <div class="form__container-footer">
-            <p class="form__text-remark">*Поля обязательны для заполнения</p>
-            <button class="form__button button button--second" type="submit">Отправить заказ</button>
+          <p class="form__text-remark">*Поля обязательны для заполнения</p>
+          <button class="form__button button button--second" type="submit">Отправить заказ</button>
         </div>
       </form>
     </section>
@@ -222,6 +239,7 @@
           <svg width="102" height="34" viewBox="0 0 102 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <use href="img/sprite.svg#logo-footer" />
           </svg>
+          <span class="visually-hidden">Логотип сайта</span>
         </a>
         <ul class="footer__list social">
           <li class="social__item">
