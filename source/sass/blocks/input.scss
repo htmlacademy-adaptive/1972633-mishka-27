@@ -24,6 +24,7 @@
     outline: none;
   }
 
+  &:hover ~ .form__icon,
   &:active ~ .form__icon,
   &:focus ~ .form__icon {
     color: $darkdowny;
@@ -65,39 +66,3 @@
 .input::placeholder {
   color: rgba($black, 0.3);
 }
-
-// .input:hover {
-//   outline: 1px solid $darkbasegrey;
-// }
-
-// .input:active,
-// .input:focus {
-//   outline: 2px solid $darkgrey;
-// }
-
-// .input:disabled {
-//   background-color: $generalgrey;
-//   pointer-events: none;
-// }
-
-// .input.error {
-//   outline: 2px solid $error;
-// }
-
-// .input.error ~ .interview__icon {
-//   color: $error;
-// }
-
-// .input:focus ~ .interview__icon {
-//   color: $green;
-// }
-
-// .input:disabled::placeholder {
-//   pointer-events: none;
-//   opacity: 0.3;
-// }
-
-// .input:disabled ~ .interview__icon {
-//   pointer-events: none;
-//   opacity: 0.3;
-// }

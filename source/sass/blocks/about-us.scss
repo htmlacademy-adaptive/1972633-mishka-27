@@ -1,12 +1,12 @@
 .about-us {
-  padding: 31px 0 58px;
+  padding: 31px 0 27px;
 
   @media (min-width: $tablet-width) {
-    padding: 56px 0 82px;
+    padding: 56px 0 25px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 69px 0 89px;
+    padding: 69px 0 31px;
   }
 }
 
@@ -22,86 +22,35 @@
   }
 }
 
-// .about-us__wrapper {
-//   @media (min-width: $tablet-width) {
-//     display: grid;
-//     grid-template-columns: 36% 45%;
-//     column-gap: 95px;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     margin: 0 0 0 175px;
-//     grid-template-columns: 246px 340px;
-//     column-gap: 103px;
-//   }
-// }
 
 .about-us__list {
-  display: grid;
-  row-gap: 32px;
   margin: 0;
   padding: 0;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 36% 45%;
-    grid-template-rows: auto auto auto;
-    column-gap: 95px;
+    column-count: 2;
+    max-width: 653px;
   }
 
-  // &--first {
-  //   margin: 0 0 31px;
-
-  //   @media (min-width: $tablet-width) {
-  //     margin: 0;
-  //     row-gap: 56px;
-  //   }
-  // }
-
-  // &--second {
-  //   @media (min-width: $tablet-width) {
-  //     row-gap: 58px;
-  //   }
-  // }
+  @media (min-width: $desktop-width) {
+    max-width: 683px;
+    margin: 0 0 0 175px;
+  }
 }
 
 .about-us__item {
+  margin: 0 0 31px;
+
   @media (min-width: $tablet-width) {
-    grid-column: 1/2;
-    // grid-row: 1/-1;
+    break-inside: avoid;
+    margin: 0 0 58px;
   }
-
-  &--second {
-    @media (min-width: $tablet-width) {
-      grid-column: 2/-1;
-      // grid-row: 1/2;
-    }
-  }
-
-  // &--clew {
-  //   @media (min-width: $tablet-width) {
-  //     grid-column: 2/-1;
-  //     grid-row: 1/2;
-  //   }
-  // }
-
-  // &--rocket {
-  //   @media (min-width: $tablet-width) {
-  //     grid-column: 2/-1;
-  //     grid-row: 2/3;
-  //   }
-  // }
-  // &--gift {
-  //   @media (min-width: $tablet-width) {
-  //     grid-column: 2/-1;
-  //     grid-row: 3/4;
-  //   }
-  // }
 }
 
 .about-us__icon {
   &--flowers {
-    margin: 0 0 13px 8px;
+    margin: 0 0 14px 8px;
 
     @media (min-width: $desktop-width) {
       margin: 0 0 15px 8px;
@@ -125,10 +74,10 @@
   }
 
   &--clew {
-    margin: 0 0 14px 2px;
+    margin: 0 0 16px 2px;
 
     @media (min-width: $tablet-width) {
-      margin: 0 0 19px;
+      margin: 4px 2px 16px;
     }
 
     @media (min-width: $desktop-width) {
@@ -149,10 +98,10 @@
   }
 
   &--gift {
-    margin: 0 0 17px 3px;
+    margin: 0 0 19px 3px;
 
     @media (min-width: $tablet-width) {
-      margin: 0 0 17px;
+      margin: -1px 0 18px 1px;
     }
 
     @media (min-width: $desktop-width) {

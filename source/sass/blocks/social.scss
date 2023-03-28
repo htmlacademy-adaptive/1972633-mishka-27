@@ -24,6 +24,7 @@
 
 .social__link {
   color: $aubergine;
+  transition: all 0.3s;
 
   &:hover {
     color: $lightpuertorico;
