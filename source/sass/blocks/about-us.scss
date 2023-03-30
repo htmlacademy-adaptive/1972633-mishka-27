@@ -1,0 +1,120 @@
+.about-us {
+  padding: 31px 0 27px;
+
+  @media (min-width: $tablet-width) {
+    padding: 56px 0 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 69px 0 31px;
+  }
+}
+
+.about-us__title {
+  margin: 0 0 28px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 39px 175px;
+  }
+}
+
+
+.about-us__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    column-count: 2;
+    max-width: 653px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 683px;
+    margin: 0 0 0 175px;
+  }
+}
+
+.about-us__item {
+  margin: 0 0 31px;
+
+  @media (min-width: $tablet-width) {
+    break-inside: avoid;
+    margin: 0 0 58px;
+  }
+}
+
+.about-us__icon {
+  &--flowers {
+    margin: 0 0 14px 8px;
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 15px 8px;
+    }
+  }
+
+  &--money {
+    margin: -1px 0 21px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 23px;
+    }
+  }
+
+  &--heart {
+    margin: 3px 0 18px 7px;
+
+    @media (min-width: $tablet-width) {
+      margin: 4px 0 18px 7px;
+    }
+  }
+
+  &--clew {
+    margin: 0 0 16px 2px;
+
+    @media (min-width: $tablet-width) {
+      margin: 4px 2px 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 3px 0 16px 4px;
+    }
+  }
+
+  &--rocket {
+    margin: 0 0 24px -6px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 27px -7px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 2px 0 25px -5px;
+    }
+  }
+
+  &--gift {
+    margin: 0 0 19px 3px;
+
+    @media (min-width: $tablet-width) {
+      margin: -1px 0 18px 1px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 17px 4px;
+    }
+  }
+}
+
+.about-us__text {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
