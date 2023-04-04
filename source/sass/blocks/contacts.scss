@@ -54,6 +54,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 48px;
+    display: inline-block;
   }
 
   @media (min-width: $desktop-width) {
@@ -87,6 +88,7 @@
 
 .contacts__item {
   display: flex;
+  align-items: flex-start;
 }
 
 

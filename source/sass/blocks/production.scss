@@ -194,17 +194,14 @@
 
 .production__link {
   width: auto;
+  font-size: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: 2/-1;
     margin: 0 37px 0 0;
-  }
-}
-
-.production .button--second {
-  font-size: 18px;
-
-  @media (min-width: $tablet-width) {
-    font-size: unset;
   }
 }

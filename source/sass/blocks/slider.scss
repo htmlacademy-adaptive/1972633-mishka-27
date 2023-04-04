@@ -8,11 +8,20 @@
   }
 }
 
+.slider__item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
 .slider__reviews {
   margin: 0 0 33px;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
+  color: $charcoal;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
