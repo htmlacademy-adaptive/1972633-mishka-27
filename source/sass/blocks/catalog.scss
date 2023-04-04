@@ -115,12 +115,13 @@
 
 
 .catalog__link-text {
-  display: block;
+  display: inline-block;
   color: $black;
   margin: 0 0 6px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 9px;
+    align-self: flex-start;
   }
 
   @media (min-width: $desktop-width) {
@@ -219,6 +220,11 @@
   color: rgba($black, 0.2);
   padding: 0;
   position: relative;
+
+  &:focus-visible {
+    color: rgba($downy, 0.3);
+    outline: none;
+  }
 }
 
 .catalog__link-icon {
@@ -234,8 +240,7 @@
     color: $downy;
   }
 
-  &:active,
-  &:focus-visible {
+  &:active {
     color: rgba($downy, 0.3);
   }
 }
