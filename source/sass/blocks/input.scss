@@ -24,9 +24,9 @@
     outline: none;
   }
 
-  &:hover~.form__icon,
-  &:active~.form__icon,
-  &:focus~.form__icon {
+  &:hover ~ .form__icon,
+  &:active ~ .form__icon,
+  &:focus ~ .form__icon {
     color: $darkdowny;
     opacity: 1;
   }
