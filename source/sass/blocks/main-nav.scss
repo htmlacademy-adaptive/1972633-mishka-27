@@ -112,10 +112,10 @@
 
 .main-nav__container {
   background-color: $white;
-  transition: left 0.5s;
+  transition: transform 0.5s;
 
   @media (min-width: $tablet-width) {
-    transition: 0s;
+    transition: unset;
     position: relative;
     display: grid;
     grid-template-columns: 50px 1fr 2fr 2fr 50px;
@@ -148,10 +148,10 @@
 
 .main-nav--closed .main-nav__container {
   @media (max-width: $mobile-width-only) {
-    position: fixed;
-    left: 100%;
+    position: absolute;
+    transform: translateX(-100%);
     width: 100%;
-    z-index: 66;
+    z-index: 6;
   }
 }
 
@@ -160,8 +160,7 @@
     position: absolute;
     width: 100%;
     z-index: 6;
-    background-color: $white;
-    left: 0;
+    transform: translateX(0);
   }
 }
 
