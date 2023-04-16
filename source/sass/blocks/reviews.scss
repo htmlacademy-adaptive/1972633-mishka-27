@@ -112,6 +112,8 @@
   padding: 0;
   background-color: transparent;
   cursor: pointer;
+  z-index: 22;
+
 
   @media (min-width: $tablet-width) {
     width: 83px;
@@ -124,6 +126,11 @@
 
   &:focus-visible {
     outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
   }
 
   &:active .reviews__icon,
