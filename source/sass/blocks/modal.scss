@@ -84,6 +84,10 @@
   border: 2px solid $downy;
 }
 
+.modal__input-checkbox:focus-visible + .modal__label {
+  border: 2px solid $downy;
+}
+
 .modal__label {
   font-size: 17px;
   line-height: 16px;
@@ -108,5 +112,9 @@
 
   &:active {
     color: rgba($charcoal, 0.25);
+  }
+
+  &:focus-visible {
+    border: 2px solid $downy;
   }
 }
