@@ -33,7 +33,7 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     content: "";
-    background-image: url("../img/reviews/review-background.png");
+    background-image: url("../img/reviews/review-background.jpg");
     top: 0;
     left: -50px;
     width: 350px;
@@ -42,7 +42,7 @@
     background-size: 350px 457px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/reviews/review-background@2x.png");
+      background-image: url("../img/reviews/review-background@2x.jpg");
       background-size: 350px 457px;
     }
   }

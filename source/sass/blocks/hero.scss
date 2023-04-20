@@ -28,37 +28,25 @@
   top: -20px;
   left: 0;
   position: absolute;
-  background-image: url("../img/hero/hero-mobile.png");
+  background-image: url("../img/hero/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/hero/hero-mobile@2x.png");
+    background-image: url("../img/hero/hero-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
     display: block;
     height: 746px;
-    background-image: url("../img/hero/hero-tablet.png");
+    background-image: url("../img/hero/hero-tablet.jpg");
     background-position: center bottom;
     background-size: contain;
     top: -69px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/hero/hero-tablet@2x.png");
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    display: block;
-    height: 746px;
-    background-image: url("../img/hero/hero-desktop.png");
-    background-position: center bottom;
-    background-size: contain;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/hero/hero-desktop@2x.png");
+      background-image: url("../img/hero/hero-tablet@2x.jpg");
     }
   }
 }
